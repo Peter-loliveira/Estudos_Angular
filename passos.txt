@@ -8,3 +8,6 @@ alterar as linhas do arquivo frontend/angular.json:
 "inlineTemplate": true, para false
 "inlineStyle": true, para false
 Desta forma o Angular vai separar os arquivos .js e .css em arquivos distintos
+
+Instalação do material Design:
+ng add @angular/material
