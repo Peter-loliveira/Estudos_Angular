@@ -1,13 +1,21 @@
-npm init -y 
+#npm init -y 
 
-npm i json-server
+#npm i json-server
 
-ng new frontend --minimal
+#ng new frontend --minimal
 
-alterar as linhas do arquivo frontend/angular.json:
+#alterar as linhas do arquivo frontend/angular.json:
 "inlineTemplate": true, para false
 "inlineStyle": true, para false
 Desta forma o Angular vai separar os arquivos .js e .css em arquivos distintos
 
-Instalação do material Design:
+#Instalação do material Design:
 ng add @angular/material
+
+#para criar
+ng g c componets/template/header
+
+#importar essa header no arquivo app.modules.ts
+import { MatToolbarModule } from '@angular/material/toolbar';
+HeaderComponent //na área @NgModule
+#Basta agora usar a tag <app-header></app-header>
