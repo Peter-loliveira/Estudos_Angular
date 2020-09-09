@@ -12,10 +12,29 @@ Desta forma o Angular vai separar os arquivos .js e .css em arquivos distintos
 #Instalação do material Design:
 ng add @angular/material
 
-#para criar
+#para criar nav
 ng g c componets/template/header
 
 #importar essa header no arquivo app.modules.ts
+
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list
+
+import { HeaderComponent } from './components/template/header/header.component';
+import { FooterComponent } from './components/template/footer/footer.component';
+import { HeaderComponent } from './components/template/header/nav.component';
+
 HeaderComponent //na área @NgModule
+FooterComponent //na área @NgModule
+NavComponent //na área @NgModule
+
 #Basta agora usar a tag <app-header></app-header>
+#Basta agora usar a tag <app-footer></app-footer>
+#Basta agora usar a tag <app-nav></app-nav>
+
+#para criar footer
+ng g c componets/template/footer
+
+#para criar nav
+ng g c componets/template/nav
